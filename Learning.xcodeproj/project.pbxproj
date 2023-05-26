@@ -16,6 +16,8 @@
 		900520402A1D948900591AAF /* LearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005203F2A1D948900591AAF /* LearningTests.swift */; };
 		9005204A2A1D948900591AAF /* LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900520492A1D948900591AAF /* LearningUITests.swift */; };
 		9005204C2A1D948900591AAF /* LearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005204B2A1D948900591AAF /* LearningUITestsLaunchTests.swift */; };
+		9005205F2A21190300591AAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005205D2A21190300591AAF /* HomeViewController.swift */; };
+		900520602A21190300591AAF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9005205E2A21190300591AAF /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		900520452A1D948900591AAF /* LearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		900520492A1D948900591AAF /* LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITests.swift; sourceTree = "<group>"; };
 		9005204B2A1D948900591AAF /* LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9005205D2A21190300591AAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9005205E2A21190300591AAF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		900520272A1D948400591AAF /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				9005205A2A2118AD00591AAF /* Modules */,
 				900520282A1D948400591AAF /* AppDelegate.swift */,
 				9005202A2A1D948400591AAF /* SceneDelegate.swift */,
 				9005202C2A1D948400591AAF /* ViewController.swift */,
@@ -125,6 +130,31 @@
 				9005204B2A1D948900591AAF /* LearningUITestsLaunchTests.swift */,
 			);
 			path = LearningUITests;
+			sourceTree = "<group>";
+		};
+		9005205A2A2118AD00591AAF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9005205B2A2118C000591AAF /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9005205B2A2118C000591AAF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9005205C2A2118E200591AAF /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9005205C2A2118E200591AAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9005205D2A21190300591AAF /* HomeViewController.swift */,
+				9005205E2A21190300591AAF /* HomeViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +264,7 @@
 				900520352A1D948800591AAF /* LaunchScreen.storyboard in Resources */,
 				900520322A1D948800591AAF /* Assets.xcassets in Resources */,
 				900520302A1D948400591AAF /* Main.storyboard in Resources */,
+				900520602A21190300591AAF /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +292,7 @@
 				9005202D2A1D948400591AAF /* ViewController.swift in Sources */,
 				900520292A1D948400591AAF /* AppDelegate.swift in Sources */,
 				9005202B2A1D948400591AAF /* SceneDelegate.swift in Sources */,
+				9005205F2A21190300591AAF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

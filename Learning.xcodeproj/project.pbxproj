@@ -18,6 +18,7 @@
 		9005204C2A1D948900591AAF /* LearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005204B2A1D948900591AAF /* LearningUITestsLaunchTests.swift */; };
 		9005205F2A21190300591AAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005205D2A21190300591AAF /* HomeViewController.swift */; };
 		900520602A21190300591AAF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9005205E2A21190300591AAF /* HomeViewController.xib */; };
+		90AEAB812A36A11100C127FE /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AEAB802A36A11100C127FE /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9005204B2A1D948900591AAF /* LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9005205D2A21190300591AAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9005205E2A21190300591AAF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		90AEAB802A36A11100C127FE /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		900520272A1D948400591AAF /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				90AEAB7F2A36A0D800C127FE /* Commons */,
 				9005205A2A2118AD00591AAF /* Modules */,
 				900520282A1D948400591AAF /* AppDelegate.swift */,
 				9005202A2A1D948400591AAF /* SceneDelegate.swift */,
@@ -155,6 +158,14 @@
 				9005205E2A21190300591AAF /* HomeViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		90AEAB7F2A36A0D800C127FE /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				90AEAB802A36A11100C127FE /* Strings.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 9005201C2A1D948300591AAF;
+			packageReferences = (
+				90F8D9762A427EA800F698C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 900520262A1D948400591AAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,6 +305,7 @@
 			files = (
 				9005202D2A1D948400591AAF /* ViewController.swift in Sources */,
 				900520292A1D948400591AAF /* AppDelegate.swift in Sources */,
+				90AEAB812A36A11100C127FE /* Strings.swift in Sources */,
 				9005202B2A1D948400591AAF /* SceneDelegate.swift in Sources */,
 				9005205F2A21190300591AAF /* HomeViewController.swift in Sources */,
 			);
@@ -634,6 +649,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90F8D9762A427EA800F698C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 9005201D2A1D948300591AAF /* Project object */;
 }

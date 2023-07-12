@@ -18,6 +18,10 @@
 		9005204C2A1D948900591AAF /* LearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005204B2A1D948900591AAF /* LearningUITestsLaunchTests.swift */; };
 		9005205F2A21190300591AAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005205D2A21190300591AAF /* HomeViewController.swift */; };
 		900520602A21190300591AAF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9005205E2A21190300591AAF /* HomeViewController.xib */; };
+		904FCDAF2A4BCDFF00B498EE /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 904FCDAE2A4BCDFF00B498EE /* ObjectMapper */; };
+		904FCDB42A4BCE7200B498EE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 904FCDB32A4BCE7200B498EE /* FirebaseFirestore */; };
+		904FCDB62A4BCE8500B498EE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 904FCDB52A4BCE8500B498EE /* FirebaseAuth */; };
+		904FCDB82A4BCE9500B498EE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 904FCDB72A4BCE9500B498EE /* FirebaseDatabaseSwift */; };
 		90AEAB812A36A11100C127FE /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AEAB802A36A11100C127FE /* Strings.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +58,7 @@
 		9005204B2A1D948900591AAF /* LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9005205D2A21190300591AAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9005205E2A21190300591AAF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		904FCDB12A4BCE3600B498EE /* learning */ = {isa = PBXFileReference; lastKnownFileType = folder; name = learning; sourceTree = "<group>"; };
 		90AEAB802A36A11100C127FE /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904FCDB82A4BCE9500B498EE /* FirebaseDatabaseSwift in Frameworks */,
+				904FCDAF2A4BCDFF00B498EE /* ObjectMapper in Frameworks */,
+				904FCDB62A4BCE8500B498EE /* FirebaseAuth in Frameworks */,
+				904FCDB42A4BCE7200B498EE /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +94,12 @@
 		9005201C2A1D948300591AAF = {
 			isa = PBXGroup;
 			children = (
+				904FCDB02A4BCE3600B498EE /* Packages */,
 				900520272A1D948400591AAF /* Learning */,
 				9005203E2A1D948900591AAF /* LearningTests */,
 				900520482A1D948900591AAF /* LearningUITests */,
 				900520262A1D948400591AAF /* Products */,
+				904FCDB22A4BCE7200B498EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +171,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		904FCDB02A4BCE3600B498EE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				904FCDB12A4BCE3600B498EE /* learning */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		904FCDB22A4BCE7200B498EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		90AEAB7F2A36A0D800C127FE /* Commons */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +210,12 @@
 			dependencies = (
 			);
 			name = Learning;
+			packageProductDependencies = (
+				904FCDAE2A4BCDFF00B498EE /* ObjectMapper */,
+				904FCDB32A4BCE7200B498EE /* FirebaseFirestore */,
+				904FCDB52A4BCE8500B498EE /* FirebaseAuth */,
+				904FCDB72A4BCE9500B498EE /* FirebaseDatabaseSwift */,
+			);
 			productName = Learning;
 			productReference = 900520252A1D948400591AAF /* Learning.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +290,7 @@
 			mainGroup = 9005201C2A1D948300591AAF;
 			packageReferences = (
 				90F8D9762A427EA800F698C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				904FCDAD2A4BCDFF00B498EE /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 			);
 			productRefGroup = 900520262A1D948400591AAF /* Products */;
 			projectDirPath = "";
@@ -651,6 +684,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		904FCDAD2A4BCDFF00B498EE /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		90F8D9762A427EA800F698C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -660,6 +701,29 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		904FCDAE2A4BCDFF00B498EE /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 904FCDAD2A4BCDFF00B498EE /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		904FCDB32A4BCE7200B498EE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90F8D9762A427EA800F698C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		904FCDB52A4BCE8500B498EE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90F8D9762A427EA800F698C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		904FCDB72A4BCE9500B498EE /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90F8D9762A427EA800F698C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9005201D2A1D948300591AAF /* Project object */;
 }

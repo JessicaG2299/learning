@@ -23,6 +23,9 @@
 		904FCDB62A4BCE8500B498EE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 904FCDB52A4BCE8500B498EE /* FirebaseAuth */; };
 		904FCDB82A4BCE9500B498EE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 904FCDB72A4BCE9500B498EE /* FirebaseDatabaseSwift */; };
 		90AEAB812A36A11100C127FE /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AEAB802A36A11100C127FE /* Strings.swift */; };
+		90EF68B02A5E3A1A008592F5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF68AE2A5E3A1A008592F5 /* SignUpViewController.swift */; };
+		90EF68B12A5E3A1A008592F5 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90EF68AF2A5E3A1A008592F5 /* SignUpViewController.xib */; };
+		90EF68B42A5E3A58008592F5 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF68B32A5E3A58008592F5 /* SignUpRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +61,11 @@
 		9005204B2A1D948900591AAF /* LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9005205D2A21190300591AAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9005205E2A21190300591AAF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		904FCDB12A4BCE3600B498EE /* learning */ = {isa = PBXFileReference; lastKnownFileType = folder; name = learning; sourceTree = "<group>"; };
+		904FCDB12A4BCE3600B498EE /* learning */ = {isa = PBXFileReference; lastKnownFileType = folder; path = learning; sourceTree = "<group>"; };
 		90AEAB802A36A11100C127FE /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		90EF68AE2A5E3A1A008592F5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		90EF68AF2A5E3A1A008592F5 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		90EF68B32A5E3A58008592F5 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 		9005205A2A2118AD00591AAF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				90EF68AA2A5E393B008592F5 /* SignUp */,
 				9005205B2A2118C000591AAF /* Home */,
 			);
 			path = Modules;
@@ -192,6 +199,48 @@
 				90AEAB802A36A11100C127FE /* Strings.swift */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		90EF68AA2A5E393B008592F5 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				90EF68B22A5E3A2A008592F5 /* Router */,
+				90EF68AD2A5E39E3008592F5 /* Model */,
+				90EF68AC2A5E39C9008592F5 /* ViewModel */,
+				90EF68AB2A5E397B008592F5 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		90EF68AB2A5E397B008592F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90EF68AE2A5E3A1A008592F5 /* SignUpViewController.swift */,
+				90EF68AF2A5E3A1A008592F5 /* SignUpViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90EF68AC2A5E39C9008592F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		90EF68AD2A5E39E3008592F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90EF68B22A5E3A2A008592F5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				90EF68B32A5E3A58008592F5 /* SignUpRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90EF68B12A5E3A1A008592F5 /* SignUpViewController.xib in Resources */,
 				900520352A1D948800591AAF /* LaunchScreen.storyboard in Resources */,
 				900520322A1D948800591AAF /* Assets.xcassets in Resources */,
 				900520302A1D948400591AAF /* Main.storyboard in Resources */,
@@ -336,7 +386,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90EF68B02A5E3A1A008592F5 /* SignUpViewController.swift in Sources */,
 				9005202D2A1D948400591AAF /* ViewController.swift in Sources */,
+				90EF68B42A5E3A58008592F5 /* SignUpRouter.swift in Sources */,
 				900520292A1D948400591AAF /* AppDelegate.swift in Sources */,
 				90AEAB812A36A11100C127FE /* Strings.swift in Sources */,
 				9005202B2A1D948400591AAF /* SceneDelegate.swift in Sources */,
